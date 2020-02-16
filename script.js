@@ -31,8 +31,6 @@ const sum = function (myArray){
     } 
     return total;
 }
-
-
     console.log(sum(range(1,10)));
     
     
@@ -50,3 +48,17 @@ const sum = function (myArray){
 // let arrayValue = [1, 2, 3, 4, 5];
 // reverseArrayInPlace(arrayValue);
 // console.log(arrayValue); // outputs [5, 4, 3, 2, 1]
+
+
+
+const reverseArrayInPlace = (arr) =>{
+    let temp 
+    for (let i = 0; i < arr.length / 2; i++){
+        temp = arr[i]
+        arr[i] = arr[arr.length-1-i]
+        arr[arr.length-1-i]=temp
+    }
+    return arr
+}
+const arr = [1,2,3,4,5]
+console.log(reverseArrayInPlace(arr))
