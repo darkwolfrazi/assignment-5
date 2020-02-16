@@ -51,6 +51,7 @@ const sum = function (myArray){
 
 
 
+
 const reverseArrayInPlace = (arr) =>{
     let temp 
     for (let i = 0; i < arr.length / 2; i++){
@@ -61,4 +62,5 @@ const reverseArrayInPlace = (arr) =>{
     return arr
 }
 const arr = [1,2,3,4,5]
+console.log(["A","B","C"].reverse())
 console.log(reverseArrayInPlace(arr))
